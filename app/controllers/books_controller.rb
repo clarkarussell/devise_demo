@@ -1,6 +1,9 @@
 class BooksController < ApplicationController
   # GET /books
   # GET /books.xml
+before_filter :authenticate_user!, :except => [:show, :index]
+
+
   def index
     @books = Book.all
 

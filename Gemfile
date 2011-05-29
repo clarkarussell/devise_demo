@@ -9,6 +9,8 @@ gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'will_paginate', '3.0.pre2'
 gem 'rake', '~> 0.8.7'
+gem 'devise', '1.1.rc0'
+gem "dynamic_form", "~> 1.1.4"
 
 group :development do
 	gem 'rspec-rails', '2.5.0'
