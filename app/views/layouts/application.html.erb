@@ -17,6 +17,7 @@
 		  <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
 		<% end %>
 	</div>
+	<div id="main_nav"><%= render_navigation %></div>
 <% flash.each do |key, value| %>
 	<%= content_tag(:div, value, :class => "flash #{key}") %>
 <% end %>
