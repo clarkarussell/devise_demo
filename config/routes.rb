@@ -1,5 +1,13 @@
 DeviseDemo::Application.routes.draw do
 
+  get "users/index"
+
+  get "users/new"
+
+  get "users/show"
+
+  get "users/edit"
+
   devise_for :users, :path_names => { :sign_up => "register"}
 
 	resources :users
