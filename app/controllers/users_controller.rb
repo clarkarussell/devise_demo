@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+	before_filter :authenticate_user!
+
   def index
     @users = User.all
   end
@@ -21,7 +23,9 @@ class UsersController < ApplicationController
   end
   
   def destroy
-  
+		@user = User.find(params[:id])
+  	@user.destroy
+		redirect_to users_path, :flash => {:success => "User destroyed."}	
   end
 
 end

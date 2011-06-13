@@ -45,6 +45,7 @@ SimpleNavigation::Configuration.run do |navigation|
     #                            against the current URI.
     #
     primary.item :home, 'Home', root_path
+    primary.item :books, 'Books', books_path
     primary.item :catagories, 'Categories', categories_path do |categories|
       categories.item :fiction, 'Fiction', fiction_path do |fiction|
       	fiction.item :novels, 'Novels', novels_path
@@ -61,7 +62,8 @@ SimpleNavigation::Configuration.run do |navigation|
     	profiles.item :jane, 'Jane', jane_path
     end
     primary.item :contact, 'Contact Us', contact_path
-    
+		
+		primary.item :users, 'Users', users_path
 
     # You can also specify a condition-proc that needs to be fullfilled to display an item.
     # Conditions are part of the options. They are evaluated in the context of the views,

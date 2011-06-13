@@ -24,3 +24,26 @@ td#main_nav {width: 120px; vertical-align: top; padding: 0 0 1px 0.33em;
 td#main_nav a:link {color: white; text-decoration: none;}
 td#main_nav a:visited {color: white; text-decoration: none;}
 td#main_nav ul {list-style-type: none;}
+
+/* Sign up button */
+
+a.signup_button {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 190px;
+	color: #fff;
+	background: #f90;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+}
+
+/* Round corners */
+
+.round {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}

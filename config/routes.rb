@@ -32,7 +32,7 @@ DeviseDemo::Application.routes.draw do
 	match '/secret', :to => 'pages#secret'
 	match '/topsecret', :to => 'pages#topsecret'
 
-	root :to => "books#index"
+	root :to => "pages#home"
 	
 end
 
