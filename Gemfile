@@ -12,6 +12,7 @@ gem 'rake', '~> 0.8.7'
 gem 'devise', '1.1.rc0'
 gem "dynamic_form", "~> 1.1.4"
 gem "simple-navigation"
+gem "haml", "~>3.1.2"
 
 group :development do
 	gem 'rspec-rails', '2.5.0'

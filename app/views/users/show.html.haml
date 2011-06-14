@@ -1,0 +1,9 @@
+%h1
+	User
+	= @user.id
+.desc
+	The email address of this user is 
+	= @user.email
+	\.
+.desc= link_to 'Edit', edit_user_path(@user)
+
